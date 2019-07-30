@@ -3,6 +3,14 @@
 # Automating running GitLab on AWS with Terraform.
 
 Prerequisites.
+OS = Centos7
+Instance_type
+S3 Bucket
+Route53
+AMI = image
+Zone_id 
+VPC_id
+Region
 
 Using provider AWS account and Terraform.
 Also need to create a bastion host so we can jump into our VPC and access other resources in public subnnet.
@@ -11,8 +19,11 @@ To start you'll need a VPC in which to create all your resources.
 VPC wiil create across two availability zones: two private and public subnets,corrsponding NAT instances,with all route tables set up for you.
 You need two new variables, your `key_name and ``ssh_public_key` is the name of an EC2 key pair to assign to instances.
 Create a file `terraform.tfvars` to hold the values to your variables.
-On the terraform directory in your terminal you can run {terreaform init} this will download the modules from GitHub and initialize a working directory for Terraform.
-Then you have the command {terraform apply and enter YES} after few you should see a success message.
+On the terraform directory in your terminal you can run {terreaform init} 
+On the terminal start running this commnads: 
+`terraform init 
+`terraform plan`
+`terraform apply --var -file=gitlab.tfvars`
 "YOU SHOULD ALWAYS INSPECT THE OUTPUT OF THE TERRAFORM BEFORE APPLYIN BY RUNNING THE COMMAND `terraform plan` "
 
 
