@@ -4,4 +4,5 @@ resource "aws_route53_record" "gitlab" {
   type    = "A"
   ttl     = "60"
   records = ["${aws_instance.gitlab.public_ip}"]
+  
 }
