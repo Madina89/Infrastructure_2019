@@ -1,6 +1,6 @@
 instance_type = "t2.large"
-key_name = "app-rsa"
-ami = "ami-0bbc25e23a7640b9b"
+key_name = "Bastion_host"
+ami = "ami-0ff760d16d9497662"
 vpc_id = "vpc-908caaf6"
 user = "centos"  # Centos7 image
 ssh_key_location = "/ssh_keys/app_rsa" # Iport public key pair to AWS as "terraform"
