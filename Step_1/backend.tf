@@ -3,5 +3,6 @@ terraform {
      bucket = "gitlab-april-2019"
      region = "eu-west-1"
      key = "gitlab/infra" 
+     
     }
 }
