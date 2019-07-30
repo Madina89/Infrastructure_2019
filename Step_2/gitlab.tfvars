@@ -1,5 +1,5 @@
 instance_type = "t2.large"
-key_name = "app-rsa"
+key_name = "app_rsa"
 ami = "ami-0ff760d16d9497662"
 vpc_id = "vpc-908caaf6"
 user = "centos"  # Centos7 image
